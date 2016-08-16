@@ -1,7 +1,7 @@
 {
     "name": "laravolt/indonesia-logo",
-    "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
-    "keywords": ["laravel", "laravolt", "indonesia"],
+    "description": "Package Laravel pendukung dari package Laravolt\Indonesia. Package ini berfungsi untuk mencrawl logo dari wikipedia",
+    "keywords": ["laravel", "laravolt", "indonesia", "indonesia-logo"],
     "license": "MIT",
     "authors": [
         {
