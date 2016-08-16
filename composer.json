@@ -1,0 +1,29 @@
+{
+    "name": "laravolt/indonesia-logo",
+    "description": "Package Laravel pendukung dari package Laravolt\Indonesia. Package ini berfungsi untuk mencrawl logo dari wikipedia",
+    "keywords": ["laravel", "laravolt", "indonesia", "indonesia-logo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Deri Ramdani",
+            "email": "deri.ramdani1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Laravolt\\Indonesia-Logo\\": "src/"
+        }
+    },
+    "require": {
+        "php" : ">=5.5.0",
+        "illuminate/support": "~5.2"
+    },
+   "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
