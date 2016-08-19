@@ -17,7 +17,6 @@ class CreateRegenciesTable extends Migration
             $table->char('id', 4);
             $table->char('province_id', 2);
             $table->string('name', 255);
-            $table->string('logo', 255);
             $table->primary('id');
             $table->foreign('province_id')->references('id')->on('provinces');
         });

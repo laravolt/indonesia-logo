@@ -43,7 +43,7 @@ class CrawlCommand extends Command
         $urlWikipediaIndonesia = $urlWikipedia. '/wiki/Daftar_kabupaten_dan_kota_di_Indonesia';
 
         //path untuk menyimpan logo
-        $path = public_path().'/images';
+        $path = public_path().'/indonesia-logo';
         //cek folder
         if(!\File::exists($path)) {
             \File::makeDirectory($path, $mode = 0777, true, true);
@@ -99,11 +99,6 @@ class CrawlCommand extends Command
                                         //menyimpan gambar
                                         $name_image = $this->save_image($this->get_url_image($urlWikipedia . $link_to_image), $regency->id, $path);
                                     }
-                                    //cek kolom logo
-                                    if ($regency->logo == '') {
-                                        //update database
-                                        \DB::table('regencies')->where('id', $regency->id)->update(['logo' => $name_image]);
-                                    }
                                 }
                             }
                         }
@@ -121,11 +116,6 @@ class CrawlCommand extends Command
                                 if(count(glob($path.'/'.$id_province.'.*'))==0){ 
                                     //menyimpan gambar
                                     $name_image = $this->save_image($this->get_url_image($urlWikipedia. $link_to_image), $id_province,$path);
-                                }
-                                //cek kolom logo
-                                if ($province->logo == '') {
-                                    //update database
-                                    \DB::table('provinces')->where('id', $province->id)->update(['logo' => $name_image]);
                                 }
                                 $count++;
                             }

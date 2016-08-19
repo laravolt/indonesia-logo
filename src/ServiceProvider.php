@@ -8,7 +8,6 @@ class ServiceProvider extends BaseServiceProvider
 {
     public function register()
     {
-
         $this->commands(\Laravolt\IndonesiaLogo\Commands\CrawlCommand::class);
         $this->commands(\Laravolt\IndonesiaLogo\Commands\SeedCommand::class);
     }
@@ -19,6 +18,8 @@ class ServiceProvider extends BaseServiceProvider
 	        __DIR__ . '/migrations' => $this->app->databasePath() . '/migrations'
 	    ], 'migrations');
 
-
+        $this->publishes([
+            __DIR__ . '/../resources/indonesia-logo' => public_path().'/indonesia-logo'
+        ], 'migrations');
     }
 }
