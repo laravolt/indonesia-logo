@@ -1,6 +1,6 @@
 {
     "name": "laravolt/indonesia-logo",
-    "description": "Package Laravel pendukung dari package Laravolt\Indonesia. Package ini berfungsi untuk mencrawl logo dari wikipedia",
+    "description": "Package Laravel pendukung dari package Laravolt/Indonesia. Package ini berfungsi untuk mencrawl logo dari wikipedia",
     "keywords": ["laravel", "laravolt", "indonesia", "indonesia-logo"],
     "license": "MIT",
     "authors": [
