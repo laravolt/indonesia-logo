@@ -1,3 +1,5 @@
+> **Archived.** This package is no longer maintained and does not support current Laravel versions. See [laravolt/laravolt](https://github.com/laravolt/laravolt) for the maintained platform.
+
 # Indonesia Logo
 
 Merupakan package pendukung dari [Laravolt\Indonesia](https://github.com/laravolt/indonesia)  
